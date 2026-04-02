@@ -1,0 +1,21 @@
+ip address : 10.0.2.15
+
+
+ran nmap scan on localhost
+
+scans performed:
+- nmap localhost
+- nmap 10.0.2.15
+- nmap -sV localhost
+
+
+results:
+
+- 10.0.2.15 ->all ports closed
+- localhost -> port 631 open
+
+-999 closed ports
+- port 631 open (IPP - internet printing protocol)
+
+insight:
+system has a printing service running which is exposed on port 631

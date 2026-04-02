@@ -1,0 +1,4 @@
+scanned localhost using nmap 
+found open ports: 
+learned about basic network scanning 
+
