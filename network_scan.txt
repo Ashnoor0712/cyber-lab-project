@@ -1,0 +1,27 @@
+Network scanned: 10.0.2.2/24
+
+Active hosts:
+- 10.0.2.2
+- 10.0.2.15
+
+Detailed scan:
+Target: 10.0.2.2
+
+Open ports:
+
+Nmap done: 256 IP addresses (1 host up) scanned in 2.77 seconds
+
+Nmap done: 1 IP address (0 hosts up) scanned in 3.25 seconds
+
+Observations:
+
+-only 1 active host on the network (10.0.2.15)
+-this indicates the VM is isolated in a NAT environment.
+-Attempted to scan 10.0.2.2 but host did not respond.
+-NMAP reported host as down due to no ping response.
+
+Conclusion
+
+-The network contains only the local machine
+-No additional devices available for scanning 
+-Demonstrates how network isolation affects reconnaissance.
