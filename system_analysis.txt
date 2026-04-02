@@ -1,1 +1,27 @@
-later
+System Analysis Project
+
+Open Ports:
+- Port 631 (TCP) running locally for CUPS printing service
+- Port 53 (TCP/UDP) running locally for DNS resolution
+- Port 5353 (UDP) active for multicast DNS
+- Additional UDP ports observed for local background services
+
+Running Services:
+- Local printing service
+- Local DNS resolver
+- Multicast DNS service discovery
+
+Recent Logs:
+- Checked recent system activity using journalctl
+- Logs showed routine background operating system events
+
+Observations:
+- Several services are active on the system
+- Port 631 is listening locally and matches earlier scan results
+- Most visible services are bound to local or loopback addresses
+- This means they are available internally but not broadly exposed to the network
+
+Conclusion:
+- Open-port analysis helps identify active services on a host
+- Logs help verify whether system behavior appears normal
+- Monitoring ports, processes, and logs is useful for defensive security analysis
