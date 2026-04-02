@@ -1,21 +1,20 @@
-ip address : 10.0.2.15
+IP Address: 10.0.2.15
 
-
-ran nmap scan on localhost
-
-scans performed:
+Commands Used:
 - nmap localhost
 - nmap 10.0.2.15
 - nmap -sV localhost
 
+Results:
+- Localhost scan showed port 631 open
+- Service identified as IPP (printing service)
+- Version detection showed CUPS 2.4
+- Network IP scan showed all 1000 ports closed
 
-results:
+Observations:
+- The service is running locally but not exposed externally
+- This demonstrates the difference between internal and external visibility
 
-- 10.0.2.15 ->all ports closed
-- localhost -> port 631 open
-
--999 closed ports
-- port 631 open (IPP - internet printing protocol)
-
-insight:
-system has a printing service running which is exposed on port 631
+Conclusion:
+- Learned how to scan ports and identify services
+- Understood how systems can be secure by limiting external exposure
