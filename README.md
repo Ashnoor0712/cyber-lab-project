@@ -56,6 +56,33 @@ Result:
 The system had a printing service (CUPS) running locally on port 631, but it was not exposed externally through the network IP. This shows how services can run internally without being publicly accessible, improving system security.
 
 ---
+## System Analysis Project
+
+### Objective
+Analyze open ports, running services, and system logs on a Linux system.
+
+### Commands Used
+- ss -tuln
+- lsof -i
+- systemctl status
+- journalctl
+
+### Findings
+- Port 631 → CUPS (local printing service)
+- Port 53 → DNS resolver
+- Port 5353 → mDNS (Avahi)
+- Services are bound to localhost (not externally exposed)
+
+### Logs Analysis
+- Checked logs using journalctl
+- Observed normal system activity
+- No suspicious behavior detected
+
+### Conclusion
+System is running expected services with no immediate security concerns. Most services are locally bound, reducing exposure.
+
+### Screenshots
+(Add your screenshots here later)
 
 # Tools Used
 - Ubuntu
