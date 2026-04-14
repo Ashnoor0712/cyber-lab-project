@@ -81,9 +81,6 @@ Analyze open ports, running services, and system logs on a Linux system.
 ### Conclusion
 System is running expected services with no immediate security concerns. Most services are locally bound, reducing exposure.
 
-### Screenshots
-(Add your screenshots here later)
-
 # Tools Used
 - Ubuntu
 - VirtualBox
